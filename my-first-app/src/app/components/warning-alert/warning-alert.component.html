@@ -1,0 +1,8 @@
+<p>warning-alert works!</p>
+<label for="">Button Name</label>
+<!-- <input type="text" class="form-control" (input)="onUpdateButtonName($event)"> -->
+<input type="text" class="form-control"[(ngModel)]="btnName">
+<!-- <p>{{btnName}}</p> -->
+<button class="btn btn-danger" [disabled]="!allowNewWarning" (click)="onBtnCreate()">Warning Alert</button>
+<!-- <p [innerText]="allowNewWarning"></p> -->
+<p>{{btnCreated}}</p>
