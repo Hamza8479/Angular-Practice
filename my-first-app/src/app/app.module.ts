@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { WarningAlertComponent } from './components/warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './components/success-alert/success-alert.component';
 import { UserComponent } from './components/user/user.component';
+import { DisplayDetailsComponent } from './components/display-details/display-details.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { UserComponent } from './components/user/user.component';
     AppComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    UserComponent
+    UserComponent,
+    DisplayDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+<button class="btn btn-primary"(click)="onClick()">Display Details Toggle</button>
+<p *ngIf="displayP" >Secret message</p>
+<p *ngFor="let counterItem of counterArr" [ngStyle]="{backgroundColor: counterItem >= 5 ? 'blue' : 'white' }" [ngClass]="{'text-white': counterItem >= 5}" >{{counterItem}}</p>
+
+<p>Getting index using ngFor</p>
+<p *ngFor="let dateItem of counterOnDate ;  let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'white' }" [ngClass]="{'text-white': i >= 4}" >{{dateItem}}</p>

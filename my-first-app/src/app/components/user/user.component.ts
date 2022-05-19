@@ -10,6 +10,7 @@ export class UserComponent implements OnInit {
   btnClicked: boolean = false
   id: number = 10
   status: string = 'online'
+  users = ['user1', 'user2']
 
   constructor() {
     this.status = Math.random() > .5 ? 'online' : 'offline'
@@ -19,8 +20,9 @@ export class UserComponent implements OnInit {
   }
 
   onClick() {
-    this.userName = ''
+   // this.userName = ''
     this.btnClicked = true
+    this.users.push(this.userName)
   }
 
   getColor() {
