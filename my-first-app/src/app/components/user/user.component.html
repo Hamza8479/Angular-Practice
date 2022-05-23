@@ -6,7 +6,7 @@
 <!-- <ng-template #noBtn [ngStyle]="{display: userName!=='' ? 'none' : 'block'}"> -->
     <p [ngStyle]="{display: userName!=='' ? 'none' : 'block'}">can't click if field is empty </p>
 <!-- </ng-template> -->
-<p *ngFor=" let user of users">{{user}}</p>
+<p *ngFor=" let user of users; let i = index" (click)="onRemoveUser(i)" >{{user}}</p>
 
 <p [ngStyle]="{backgroundColor: 'red'}">Style paragrapgh dynamically with ngStyle</p>
 

@@ -25,6 +25,10 @@ export class UserComponent implements OnInit {
     this.users.push(this.userName)
   }
 
+  onRemoveUser(i: number) {
+    this.users.splice(i, 1);
+  }
+
   getColor() {
     return this.status === 'online' ? 'green' : 'red';
   }
