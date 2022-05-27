@@ -7,6 +7,8 @@ import { WarningAlertComponent } from './components/warning-alert/warning-alert.
 import { SuccessAlertComponent } from './components/success-alert/success-alert.component';
 import { UserComponent } from './components/user/user.component';
 import { DisplayDetailsComponent } from './components/display-details/display-details.component';
+import { CockpitComponent } from './components/cockpit/cockpit.component';
+import { ServerElementComponent } from './components/server-element/server-element.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { DisplayDetailsComponent } from './components/display-details/display-de
     WarningAlertComponent,
     SuccessAlertComponent,
     UserComponent,
-    DisplayDetailsComponent
+    DisplayDetailsComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,
