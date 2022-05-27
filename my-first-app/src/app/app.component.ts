@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, ContentChild, ElementRef, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,8 @@ import { Component, Output } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  oddNumbers: number[] = []
+  evenNumbers: number[] = []
   serverElements = [
     {
       type: 'server',
@@ -36,6 +38,15 @@ export class AppComponent {
 
   onDestroyFirst() {
     this.serverElements.splice(0, 1)
+  }
+
+  onIntervalFired(firedNumber: number) {
+    if(firedNumber % 2 === 0){
+      this.evenNumbers.push(firedNumber)
+    }
+    else {
+      this.oddNumbers .push(firedNumber)
+    }
   }
 
 }
